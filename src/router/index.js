@@ -1,10 +1,9 @@
 import { createWebHistory, createRouter } from "vue-router";
+import TsumHome from "@/views/TsumHome.vue";
 
 const routes = [
-  {
-    // path: "/경로",
-    // component: import해온 컴포넌트,
-  }
+  { path: "/", component: TsumHome},
+  { path: "/index", redirect : "/"}
 ];
 
 const router = createRouter({
